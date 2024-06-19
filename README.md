@@ -2,7 +2,7 @@
 
   Scraping image filies from google.  
 
-  ubutu 22.04  
+  ubuntu 22.04  
   snap firefox  
   geckodriver:/snap/bin/firefox.geckodriver  
 
