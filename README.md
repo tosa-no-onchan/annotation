@@ -2,9 +2,12 @@
 
   Scraping image filies from google.  
 
-  ubuntu 22.04  
+  ubuntu 24.04  
+  python 3.12.3  
   snap firefox  
   geckodriver:/snap/bin/firefox.geckodriver  
+  $ ls /snap/bin/firefox.geckodriver  
+  上記で、有無がわかる。多分あると思うので、すぐ使える。  
 
 #### 必要パッケージ  
 $ python -m pip install selenium  
@@ -13,6 +16,7 @@ $ python -m pip install selenium
   $ python3 scraper3.py  
   
   ./data/{self.QUERY} に、保存される。  
+  一応、今も大丈夫みたいじゃ。2026.3.2 by nishi 
   
 #### 実行前に変更  
 ```
