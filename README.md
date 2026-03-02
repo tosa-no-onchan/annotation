@@ -6,10 +6,13 @@
   snap firefox  
   geckodriver:/snap/bin/firefox.geckodriver  
 
-  
+#### 必要パッケージ  
+$ python -m pip install selenium  
+
+#### 実行  
   $ python3 scraper3.py  
   
-#### 変更箇所  
+#### 実行前に変更  
 ```
 class Collect_Image:
     def __init__(self):
