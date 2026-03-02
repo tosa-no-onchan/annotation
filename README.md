@@ -12,6 +12,8 @@ $ python -m pip install selenium
 #### 実行  
   $ python3 scraper3.py  
   
+  ./data/{self.QUERY} に、保存される。  
+  
 #### 実行前に変更  
 ```
 class Collect_Image:
