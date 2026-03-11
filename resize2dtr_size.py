@@ -84,7 +84,7 @@ class ResizeImg:
       # フォルダを作成（存在する場合は無視する）
       os.makedirs(self.dist_folder, exist_ok=True)
 
-    def conv(self):
+    def __call__(self):
         # 変換元のフォルダ内のファイルを取得
         self.files = os.listdir(self.source_folder)
         # 変換元のフォルダ内のすべてのファイルについて処理
@@ -103,4 +103,4 @@ class ResizeImg:
 
 if __name__ == '__main__':
   resizeImg=ResizeImg()
-  resizeImg.conv()
+  resizeImg()
