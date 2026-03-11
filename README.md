@@ -33,3 +33,15 @@ class Collect_Image:
         self.save_dir = os.path.join(self.project_dir, 'data', self.QUERY)  # data <-- 保存場所
         ...
 ```
+
+### webp to jpeg 変換ツール  
+  上記でダウンロードした画像ファイルで、webp 画像を、jpeg ファイルに変換します。  
+  $ python webp2jpg.py  
+
+### hugging face DTR 学習用の画像サイズへの変換  
+  入力画像のサイズを、アスペクト比を維持したまま、480x480 に変更して、  
+  余白には、黒(0,0,0) を埋め込みます。  
+  $ python resize2dtr_size.py  
+
+  この後、labelImg で、アノテーションを作ります。  
+  
