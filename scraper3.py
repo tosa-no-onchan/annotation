@@ -43,9 +43,16 @@ def get_out_line(text,keyword="class="):
 
 class Collect_Image:
     def __init__(self):
-        self.start_no=0
-        self.down_load_count=900
-        self.QUERY = "雑草"
+        #self.start_no=800
+        self.part=1
+        self.count_at_once=200
+        self.start_no=self.count_at_once*(self.part-1)
+        self.down_load_count=self.count_at_once*self.part
+
+        #self.QUERY = "雑草"
+        #self.QUERY = "樹木"
+        #self.QUERY = "庭の鉢植えの植物"
+        self.QUERY = "草"
         self.LIMIT_DL_NUM = self.start_no + self.down_load_count
 
         # 出力フォルダの作成
